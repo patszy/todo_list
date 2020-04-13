@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="todo-container">
+        <form class="todo-form" id="todoForm">
+            <label class="todo-form-label" for="todoMessage">Enter task content
+                <textarea class="todo-form-message" name="todoMessage" id="todoMessage"></textarea>
+            </label>
+
+            <button type="submit" class="button todo-form-button" title="Add task">Add</button>
+        </form>
+
+        <section class="todo-list-container">
+            <header class="todo-list-header">
+                <h2 class="todo-list-title">
+                    Task list
+                </h2>
+
+                <form class="todo-list-search-form">
+                    <input type="search" placeholder="Search task" id="todoSearch" class="todo-list-search">
+                </form>
+            </header>
+
+            <div class="todo-list" id="todoList">
+                <div class="todo-item">
+                    <div class="todo-item-bar">
+                        <h3 class="todo-item-date">20-10-2016 16:32</h3>
+                        <button class="todo-item-delete" title="Delete task">
+                            <i class="fas fa-times-circle"></i>
+                        </button>
+                    </div>
+
+                    <div class="todo-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laudantium quasi blanditiis enim molestias explicabo id totam veniam corporis maiores.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
