@@ -44,10 +44,6 @@ addTask = (content) => {
     todoList.append(todo);
 }
 
-deleteTask = () => {
-
-}
-
 document.addEventListener('DOMContentLoaded', () => {
     todoForm = document.getElementById('todoForm');
     todoList = document.getElementById('todoList');
@@ -73,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const items = document.querySelectorAll(".todo-item");
         items.forEach(item => {
             if(item.querySelector(".todo-item-text").innerText.toLowerCase().includes(event.target.value.toLowerCase())) {
-                item.style.setProperty("display", "");
+                item.style.removeProperty("display");
             } else item.style.setProperty("display", "none");
         });
     });

@@ -95,6 +95,10 @@ main {
     border-top: 1px dashed #aaa;
 }
 
+.todo-item.--hide {
+    display: none;
+}
+
 .todo-item-bar {
     display: flex;
     justify-content: space-between;
