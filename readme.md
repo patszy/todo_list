@@ -6,8 +6,7 @@
 * [Sources](#sources)
 
 ## General info
-This project is a solution of task for Junior Front-end Developer.
-Project is todo list.
+This project is a simple todo list.
 
 Website is in Ready to Manufacture version.
 
